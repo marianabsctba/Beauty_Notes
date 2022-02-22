@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/allNotesFragment">
+
+    <fragment
+        android:id="@+id/allNotesFragment"
+        android:name="br.infnet.marianabs.mybeautynotes.ui.AllNotesFragment"
+        android:label="MyNotes"
+        tools:layout="@layout/fragment_all_notes">
+        <action
+            android:id="@+id/action_allNotesFragment_to_editNoteFragment"
+            app:destination="@id/editNoteFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_allNotesFragment_to_intro3Fragment"
+            app:destination="@id/intro3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNoteFragment"
+        android:name="br.infnet.marianabs.mybeautynotes.ui.EditNoteFragment"
+        android:label="Note"
+        tools:layout="@layout/fragment_edit_note">
+        <argument
+            android:name="updateNote"
+            android:defaultValue="@null"
+            app:argType="br.infnet.marianabs.mybeautynotes.model.Notes"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_editNoteFragment_to_allNotesFragment"
+            app:destination="@id/allNotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intro1Fragment"
+        android:name="br.infnet.marianabs.mybeautynotes.ui.Intro1Fragment"
+        android:label="Intro1Fragment" >
+        <action
+            android:id="@+id/action_intro1Fragment_to_intro2Fragment"
+            app:destination="@id/intro2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intro2Fragment"
+        android:name="br.infnet.marianabs.mybeautynotes.ui.Intro2Fragment"
+        android:label="Intro2Fragment" >
+        <action
+            android:id="@+id/action_intro2Fragment_to_intro3Fragment"
+            app:destination="@id/intro3Fragment" />
+        <action
+            android:id="@+id/action_intro2Fragment_to_intro1Fragment"
+            app:destination="@id/intro1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intro3Fragment"
+        android:name="br.infnet.marianabs.mybeautynotes.ui.Intro3Fragment"
+        android:label="Intro3Fragment" >
+        <action
+            android:id="@+id/action_intro3Fragment_to_allNotesFragment"
+            app:destination="@id/allNotesFragment" />
+        <action
+            android:id="@+id/action_intro3Fragment_to_intro2Fragment"
+            app:destination="@id/intro2Fragment" />
+    </fragment>
+</navigation>

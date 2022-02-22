@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MyNote</string>
+    <string name="hello_blank_fragment">Oi fragmento branco!</string>
+    <string name="sample_title">Lorem Ipsum</string>
+    <string name="sample_desc">Lorem Ipsum dois....</string>
+    <string name="are_you_sure_you_want_to_delete_all_notes">Tem certeza de que quer deletar?</string>
+    <string name="this_process_is_irreversible">(Ação irreversível!)</string>
+    <string name="choose_theme">Escolher tema</string>
+    <string name="system_default">Sistema</string>
+    <string name="dark">Noturno</string>
+    <string name="light">Diurno</string>
+    <string name="follow_battery_saver">Salvar bateria</string>
+    <string name="title">Título</string>
+    <string name="note">Lembrete</string>
+    <string name="text_intro1">Não esqueça de nada onde estiver!</string>
+    <string name="text_intro2">Seja dia ou noite</string>
+    <string name="text_intro3">Lembre-se de tudo!</string>
+    <string name="desc_intro1">O que você está pensando hoje?</string>
+    <string name="desc_intro2">Lembretes fáceis de usar</string>
+    <string name="desc_intro3">Guarde suas memórias...</string>
+    <string name="move_browser">Veja mais no GitHub!</string>
+    <string name="praia">praia imagem</string>
+    <string name="aviao">avião imagem</string>
+    <string name="quarto">quarto imagem</string>
+    <string name="next">Próximo</string>
+    <string name="initialSplash">Logo MyNotes</string>
+    <string name="all_notes">Todas as notas</string>
+    <string name="edit_notes">Editar notas</string>
+</resources>
